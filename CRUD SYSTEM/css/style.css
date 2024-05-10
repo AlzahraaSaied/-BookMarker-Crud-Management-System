@@ -1,0 +1,130 @@
+.bg-pink {
+    background-color: rgb(247, 236, 222);
+}
+
+.bg-whiteTrans{
+    background-color: rgba(124, 116, 116, 0.6);
+}
+.w-div{
+    width: 500px;
+    
+}
+
+h1 span {
+    position: relative;
+    display: inline-block;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+
+h1 span::after {
+    content: "";
+    position: absolute;
+    background-color: #FEC260;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: height 0.3s ease-out;
+    z-index: -1;
+}
+
+h1 span:hover:after {
+    height: 70%;
+
+}
+
+.dotted-line {
+    border-style: dotted;
+    border-width: 2px;
+    color: black;
+    margin: 50px 0;
+}
+
+h4 {
+    background-image: linear-gradient(to right, #3FA55B, #B1AB49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+}
+h5{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+p{
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.button {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #BB4120 !important;
+}
+.buttons{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.bo{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.dottted-line {
+    border-style: dotted;
+    border-width: 2px;
+    color: black;
+    margin: 20px 0;
+}
+
+.form-group label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+hr {
+    padding: 0;
+    margin: 10px;
+}
+
+
+@media (max-width: 576px){
+    /*#siteData{
+        width: 100%;
+        margin: auto;
+    }*/
+
+    .bo{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 10px;
+    }
+    .bo i{
+        margin-top: 5px;
+    }
+}
+

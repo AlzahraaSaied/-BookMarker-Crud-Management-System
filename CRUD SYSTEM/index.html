@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark CRUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34e59aa478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-pink">
+    <div class="container mx-auto">
+        <h1 class="text-center mt-5"><span>Bookmarker</span></h1>
+        <hr class="dotted-line">
+
+        <div class="text-center">
+            <h4 class="mt-1">
+                <i class="fa-solid fa-bookmark" style="color: #3FA55B;"></i>
+                Bookmark Your Favorite Sites
+                <i class="fa-solid fa-bookmark" style="color: #B1AB49;"></i>
+            </h4>
+        </div>
+
+        <div class="form-group">
+            <i class="fa-solid fa-book-bookmark" style="color: #0d0d0d;"></i>
+            <label for="siteName" class="ps-2 pb-2 pt-3 ">Site Name</label>
+            <input type="text" oninput="validationInputs(this)" id="siteName" class="form-control " placeholder="Bookmark Name">
+        </div>
+
+        <div class="form-group">
+            <i class="fa-solid fa-link" style="color: #0d0d0d;"></i>
+            <label for="siteUrl" class="ps-2 pb-2 pt-3">Site URL</label>
+            <input type="text" oninput="validationInputs(this)" id="siteUrl" class="form-control" placeholder="Website URL">
+        </div>
+        
+        <div class="text-center my-4 d-flex justify-content-center align-items-center flex-column">
+            <button id="addbtn" onclick="siteSubmit()" type="button"
+                class=" btn btn-danger button px-5 ">Submit</button>
+            <button id="updatebtn" class=" buttons d-none btn btn-warning text-white px-5 mt-3" 
+                onclick="updateSite(); ">Update</button>
+        </div>
+        <hr class="dottted-line">
+
+            <table id="siteData" class="w-100 mx-auto text-center bg-white mb-5 pt-5 ">
+            </table>
+        <div id="alertDiv" class="d-none"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
